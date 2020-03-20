@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import { Switch, Route,  BrowserRouter} from 'react-router-dom'
 import App from './App';
 import Header from './Header'
+import Portrait from './Portrait'
+import Features from './Features'
 import About from './About'
 import Portfolio from './Portfolio'
 import Hobbies from './Hobbies'
+import Footer from './Footer'
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
@@ -15,11 +18,22 @@ function Router(props) {
         <BrowserRouter>
             <Header />
         <Switch>
-            <Route path= {'/'} component={App} />
-            <Route path={'/about'} component={About} />
-            <Route path={'/portfolio'} component={Portfolio} />
-            <Route path={'/hobbies'} component={Hobbies} />
-        </Switch>
+      <Route exact path='/' component={App}>
+			<Portrait />
+      <Features />
+      </Route>
+      <Route path='/about' component={About}>
+      <About />
+      </Route>
+      <Route path='/portfolio' component={Portfolio}>
+        <Portfolio />
+      </Route>
+      <Route path='/hobbies' component={Hobbies}>
+        <Hobbies />
+      </Route>
+
+      </Switch>
+      <Footer />
         </BrowserRouter>
         </div>
     )

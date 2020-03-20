@@ -1,23 +1,34 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Portrait from './Portrait';
-import Footer from './Footer';
-import About from './About'
-import Features from './Features'
-import Hobbies from './Hobbies'
-import {BrowserRouter} from 'react-router-dom'
+import ContactMe from './ContactMe'
 
-function App() {
+class App extends React.Component {
+constructor(props) {
+super(props)
+
+this.state = {
+  showContactForm: false 
+}
+}
+
+
+  
+    toggleContactForm=()=> {  
+  this.setState({  
+       showPopup: !this.state.showContactFOrm  
+  });  
+   }  
+  
+
+  render () {
+
+  
 	return (
     <div className="App">
-    <BrowserRouter>
-			<Portrait />
-      <Features />
-			<Footer />
-    </BrowserRouter>
+    <ContactMe toggle={this.toggleContactForm}/>
 		</div>
 	);
+}
 }
 
 export default App;

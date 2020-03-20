@@ -17,8 +17,10 @@ export class Header extends Component {
                 <Link to='/portfolio' className='headerItems'>
                     <span>Portfolio</span>
                 </Link>
-                <Link to='/hobbies' className='headerItems'></Link>
-                <a className='headerItems'>Hobbies/Interests</a>
+                <Link to='/hobbies' className='headerItems'>
+                    <span>Hobbies</span>
+                </Link>
+                
                 </div>
                 <div id='headerRight'>
                 <a className='headerItems'>Contact Me</a>

@@ -1,20 +1,25 @@
+/* -------------------------Across Component Standards -----------------------------------*/
+h1 {
+	color:rgba(41, 37, 37, 0.8);
+}
+
 /* --------------------------Header ------------------------------ */
-#header{
-display: flex;
-flex-direction: row;
-background-color:rgba(41, 37, 37, 0.2);
-justify-content: space-between;
-width: 100%;
-color: white;
-height: 3rem;
-align-items: center;
-position: fixed;
-top: 0;
+#header {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(41, 37, 37, 0.2);
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+	height: 3rem;
+	align-items: center;
+	position: fixed;
+	top: 0;
 }
 
 #header.scrolled {
 	background: rgba(41, 37, 37, 0.8);
-    transition: background 500ms;
+	transition: background 500ms;
 }
 
 .headerItems {
@@ -26,20 +31,19 @@ top: 0;
 
 #portrait {
 	padding-top: 3rem;
-    height: 80vh;
-    background-image: url('https://images.unsplash.com/photo-1491622652925-46646d8a603d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1447&q=80');
-    background-size: cover;
-
+	height: 80vh;
+	background-image: url('https://images.unsplash.com/photo-1491622652925-46646d8a603d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1447&q=80');
+	background-size: cover;
 }
 
 #name {
-    margin: 0;
+	margin: 0;
 }
 
 .textBox {
-    background-color: rgba(41, 37, 37, 0.1);
-    width: fit-content;
-    padding: 2rem
+	background-color: rgba(41, 37, 37, 0.1);
+	width: fit-content;
+	padding: 2rem;
 }
 
 /* -------------------------------------Features/ Hobbies/ Photo Galleries ---------------------------------------*/
@@ -55,8 +59,11 @@ top: 0;
 	height: 60vh;
 	background-image: url('https://images.unsplash.com/photo-1519376849285-7e81643e2c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 	background-size: cover;
-	padding-top: 20%;
-	padding-bottom: 30%;
+	padding-top: 10%;
+	padding-bottom: 60%;
+}
+#hobbiesBioContainer {
+	padding-left: 3rem;
 }
 
 .image-with-caption {
@@ -72,8 +79,7 @@ label {
 }
 
 .landing-image {
-	border: solid 3px rgb(235, 235, 235);
-	border-radius: 2px;
+	box-shadow: black 5px 4px 3px;
 	margin: 40px 0;
 	width: 97%;
 	color: white;
@@ -85,34 +91,74 @@ label {
 	grid-row-gap: 30px;
 	grid-template-columns: 1fr 1fr 1fr;
 	height: 300px;
+	width: 90%;
+	justify-content: center;
+	padding: 3rem;
+}
+
+/* ---------------------------- Portfolio ------------------------------------- */
+#portfolioContainer {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	margin: 0;
+}
+
+.portfolioItem {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	margin: 0;
+	padding-bottom: 3rem;
+}
+
+.portfolioImages {
+	width: 30%;
+}
+
+.portfolioLabels {
+	padding: 0;
+	font-size: 2rem;
+	float: left;
+	width: fit-content;
+}
+
+.projectDescription {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 5rem;
 }
 /* ----------------------------- Footer --------------------------------------*/
 
 #footer {
-	background-color: rgb(235, 235, 235);
 	font-size: 12px;
 	height: 30%;
 	padding-bottom: 3%;
 	padding-top: 30px;
-    width: 100%;
-    background-color:rgba(41, 37, 37, 0.8);
-    color: white;
+	width: 100%;
+	background-color: rgba(41, 37, 37, 0.8);
+	color: white;
 	border-radius: 4px;
 	position: relative;
 	bottom: 0;
-  
 }
 
 #footerContentContainer {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
-    
 
 .addresses {
 	display: flex;
-    flex-direction: row;
-    padding-left: 10%;
+	flex-direction: row;
+	padding-left: 10%;
 }
 
 .addressStack1 {
@@ -156,15 +202,15 @@ label {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-    text-align: left;
-    padding-left: 5rem;
+	text-align: left;
+	padding-left: 5rem;
 }
 
 .column2 {
 	display: flex;
 	flex-direction: column;
-    margin-left: 25px;
-    width: 30vw;
+	margin-left: 25px;
+	width: 30vw;
 }
 
 .commentQC {
@@ -174,19 +220,19 @@ label {
 }
 
 .contentQC {
-    width: 20rem;
-    padding-left: 10%;
+	width: 20rem;
+	padding-left: 10%;
 }
 
 .containerQC {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .emailQC {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 i {
@@ -253,7 +299,6 @@ i {
 	transition: 0.25s;
 }
 
-
 .stackItem {
 	padding: 0.4rem;
 	text-align: left;
@@ -261,23 +306,22 @@ i {
 
 /* ------------------------Commenting --------------------------------------*/
 #newComBox {
-display: flex;
-flex-direction: column;
-margin: 2rem;
-background-color: rgb(101, 104, 101);
-padding: 2rem;
-border-radius: 5%;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+	background-color: rgb(101, 104, 101);
+	padding: 2rem;
+	border-radius: 5%;
 }
 
 #newCommentName {
-flex-direction: row;
+	flex-direction: row;
 }
 
 #newCommentEmail {
 	flex-direction: row;
-
 }
 
 #newCommentContext {
-flex-direction: row;
+	flex-direction: row;
 }

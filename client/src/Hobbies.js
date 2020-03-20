@@ -4,10 +4,14 @@ export class Hobbies extends Component {
 	render() {
 		return (
 			<div id="hobbiesContainer">
-				<p>In my free time I like to</p>
-				<div className="photoGallery">
+                <div id='hobbiesBioContainer'>
+                <h1>Hobbies and Interests</h1>
+				<p id='hobbyBio'>In my free time I like to</p>
+				</div>
+                <div className="photoGallery">
 					<div className="featureContainer">
 						<div id="landing-images">
+                            {/* --------------------column 1------------------------- */}
 							<div className="column">
 								<div class="img-with-caption">
 									<img class="landing-image" src="https://www.fillmurray.com/300/200" alt="" />
@@ -19,7 +23,7 @@ export class Hobbies extends Component {
 									<img class="landing-image" src="https://placekitten.com/300/200" alt="" />
 								</div>
 							</div>
-							{/* ---------------------row 2--------------------------- */}
+							{/* ---------------------column 2--------------------------- */}
 							<div className="column">
 								<div class="img-with-caption">
 									<img class="landing-image" src="https://www.fillmurray.com/300/200" alt="" />
@@ -31,7 +35,7 @@ export class Hobbies extends Component {
 									<img class="landing-image" src="https://placekitten.com/300/200" alt="" />
 								</div>
 							</div>
-							{/* --------------------------row 3 -------------------------------*/}
+							{/* --------------------------column 3 -------------------------------*/}
 							<div className="column">
 								<div class="img-with-caption">
 									<img class="landing-image" src="https://www.fillmurray.com/300/200" alt="" />

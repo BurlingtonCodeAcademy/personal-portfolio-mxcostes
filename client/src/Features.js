@@ -10,7 +10,7 @@ export class Features extends Component {
 					<div id="landing-images">
 						<div class="img-with-caption">
                             <Link to='/about'>
-							<img class="landing-image" src="https://www.fillmurray.com/300/200" alt="" />
+							<img class="landing-image" src="https://images.unsplash.com/photo-1548942587-640e29773615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80" alt="" />
 							<label>About Me</label>
                             </Link>
 						</div>
