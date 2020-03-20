@@ -33,7 +33,7 @@ export class Footer extends Component {
 								<i class="fas fa-envelope-square" /> mxcostes@gmail.com
 							</div>
 							<div className="stackItem">
-								<i class="fas fa-tree" />TBD.com
+                                <i class="fab fa-github"></i>github.com/mxcostes
 							</div>
 						</div>
 						<div className="addressStack2">

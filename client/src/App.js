@@ -5,6 +5,7 @@ import Portrait from './Portrait';
 import Footer from './Footer';
 import About from './About'
 import Features from './Features'
+import Hobbies from './Hobbies'
 import {BrowserRouter} from 'react-router-dom'
 
 function App() {
