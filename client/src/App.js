@@ -1,12 +1,24 @@
 import React from 'react';
 import './App.css';
+import Header from './Header';
+import Portrait from './Portrait';
+import Footer from './Footer';
+import About from './About'
+import Features from './Features'
+import {BrowserRouter} from 'react-router-dom'
 
 function App() {
-  return (
+	return (
     <div className="App">
-      <h1>Hello portfolio!</h1>
-    </div>
-  );
+    <BrowserRouter>
+			<Portrait />
+      <Features />
+			<Footer />
+    </BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
+
+

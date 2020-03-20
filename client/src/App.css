@@ -1,0 +1,270 @@
+/* --------------------------Header ------------------------------ */
+#header{
+display: flex;
+flex-direction: row;
+background-color:rgba(41, 37, 37, 0.2);
+justify-content: space-between;
+width: 100%;
+color: white;
+height: 3rem;
+align-items: center;
+position: fixed;
+top: 0;
+}
+
+#header.scrolled {
+	background: rgba(41, 37, 37, 0.8);
+    transition: background 500ms;
+}
+
+.headerItems {
+	padding: 1rem;
+	color: white;
+}
+
+/* ----------------------------------Portrait -------------------------------*/
+
+#portrait {
+	padding-top: 3rem;
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1491622652925-46646d8a603d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1447&q=80');
+    background-size: cover;
+
+}
+
+#name {
+    margin: 0;
+}
+
+.textBox {
+    background-color: rgba(41, 37, 37, 0.1);
+    width: fit-content;
+    padding: 2rem
+}
+
+/* -------------------------------------Features ---------------------------------------*/
+#box {
+	height: 60vh;
+	background-image: url('https://images.unsplash.com/photo-1519376849285-7e81643e2c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+	background-size: cover;
+	padding: 5rem;
+}
+
+.image-with-caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+label {
+	color: black;
+	width: 100%;
+	padding-left: 38%;
+}
+
+.landing-image {
+	border: solid 3px rgb(235, 235, 235);
+	border-radius: 2px;
+	margin: 40px 0;
+	width: 97%;
+	color: white;
+}
+
+#landing-images {
+	display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 300px;
+}
+/* ----------------------------- Footer --------------------------------------*/
+
+#footer {
+	background-color: rgb(235, 235, 235);
+	font-size: 12px;
+	height: 30%;
+	padding-bottom: 3%;
+	padding-top: 30px;
+    width: 100%;
+    background-color:rgba(41, 37, 37, 0.8);
+    color: white;
+	border-radius: 4px;
+	position: relative;
+	bottom: 0;
+  
+}
+
+#footerContentContainer {
+    display: flex;
+    flex-direction: row;
+}
+    
+
+.addresses {
+	display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+}
+
+.addressStack1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.addressStack2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+#comment-area {
+	background-color: rgb(244, 244, 244);
+	border: none;
+	border-radius: 2px;
+	box-shadow: -1px -1px #d8d8d8;
+	font-family: "Montserrat", sans-serif;
+	height: 100px;
+	padding-top: 3%;
+	width: 400px;
+}
+
+#comment-area:focus {
+	background-color: white;
+	outline-color: lightgray;
+	transition: 0.25s;
+}
+
+.QC {
+	font-size: 1.5em;
+	padding: 1rem;
+}
+
+.column1 {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.column2 {
+	display: flex;
+	flex-direction: column;
+    margin-left: 25px;
+    width: 30vw;
+}
+
+.commentQC {
+	margin: 0rem;
+	padding: 10px 0px 10px 0rem;
+	resize: none;
+}
+
+.contentQC {
+    width: 20rem;
+    padding-left: 10%;
+}
+
+.containerQC {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.emailQC {
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-email {
+	background-color: rgb(244, 244, 244);
+	border: none;
+	border-radius: 2px;
+	box-shadow: -1px -1px #d8d8d8;
+	font-family: "Montserrat", sans-serif;
+	height: 2rem;
+	outline-color: lightgray;
+	padding-left: 3%;
+	width: 45%;
+}
+
+#input-email:focus {
+	background-color: white;
+	transition: 0.25s;
+}
+
+#input-name {
+	background-color: rgb(244, 244, 244);
+	border: none;
+	border-radius: 2px;
+	box-shadow: -1px -1px #d8d8d8;
+	font-family: "Montserrat", sans-serif;
+	outline-color: lightgray;
+	padding-left: 3%;
+	width: 45%;
+}
+
+#input-name:focus {
+	background-color: white;
+	transition: 0.25s;
+}
+
+.headerQC {
+	text-align: center;
+}
+
+.learn-more-button {
+	align-items: center;
+	background-color: rgb(101, 104, 101);
+	border-radius: 4px;
+	color: white;
+	display: flex;
+	font-size: 10px;
+	font-weight: bold;
+	height: 40px;
+	justify-content: center;
+	margin-bottom: 1rem;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.25s;
+	width: 150px;
+}
+
+.learn-more-button:hover {
+	background-color: rgb(19, 97, 9);
+	color: rgb(228, 228, 228);
+	transition: 0.25s;
+}
+
+
+.stackItem {
+	padding: 0.4rem;
+	text-align: left;
+}
+
+/* ------------------------Commenting --------------------------------------*/
+#newComBox {
+display: flex;
+flex-direction: column;
+margin: 2rem;
+background-color: rgb(101, 104, 101);
+padding: 2rem;
+border-radius: 5%;
+}
+
+#newCommentName {
+flex-direction: row;
+}
+
+#newCommentEmail {
+	flex-direction: row;
+
+}
+
+#newCommentContext {
+flex-direction: row;
+}
