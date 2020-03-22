@@ -2,11 +2,18 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 
 export class Header extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            showPopUp: false
+        }
+    }
     render() {
         return (
             <div id='header'>
                 <div id='headerLeft'>
-                <a className='headerItems'>MGC</a>
+                <span id='initials'>MGC</span>
                 
                 <Link to='/' className='headerItems'>
                     <span>Home</span>
@@ -23,7 +30,9 @@ export class Header extends Component {
                 
                 </div>
                 <div id='headerRight'>
-                <a className='headerItems'>Contact Me</a>
+                    <Link to='/contact' className='headerItems'>
+                <span>Contact Me</span>
+                </Link>
                 </div>
                 
             </div>

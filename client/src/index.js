@@ -1,48 +1,70 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Switch, Route,  BrowserRouter} from 'react-router-dom'
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
-import Header from './Header'
-import Portrait from './Portrait'
-import Features from './Features'
-import About from './About'
-import Portfolio from './Portfolio'
-import Hobbies from './Hobbies'
-import Footer from './Footer'
+import Header from './Header';
+import Portrait from './Portrait';
+import Features from './Features';
+import About from './About';
+import Portfolio from './Portfolio';
+import Hobbies from './Hobbies';
+import ContactMe from './ContactMe';
+import Footer from './Footer';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-function Router(props) {
-    return(
-        <div>
-        <BrowserRouter>
-            <Header />
-        <Switch>
-      <Route exact path='/' component={App}>
-			<Portrait />
-      <Features />
-      </Route>
-      <Route path='/about' component={About}>
-      <About />
-      </Route>
-      <Route path='/portfolio' component={Portfolio}>
-        <Portfolio />
-      </Route>
-      <Route path='/hobbies' component={Hobbies}>
-        <Hobbies />
-      </Route>
+class Router extends React.Component {
+	constructor(props) {
+		super(props);
 
-      </Switch>
-      <Footer />
-        </BrowserRouter>
-        </div>
-    )
+		this.state = {
+			showContactForm: false,
+			name: '',
+			email: '',
+			message: ''
+		};
+	}
+
+
+
+	render() {
+		return (
+			<div>
+				<BrowserRouter>
+					<Header />
+					<Switch>
+						<Route exact path="/" component={App}>
+							<Portrait />
+							<Features />
+							<Footer />
+						</Route>
+
+						<Route path="/about" component={About}>
+							<About />
+							<Footer />
+						</Route>
+						<Route path="/portfolio" component={Portfolio}>
+							<Portfolio />
+							<Footer />
+						</Route>
+						<Route path="/hobbies" component={Hobbies}>
+							<Hobbies />
+							<Footer />
+						</Route>
+						<Route path="/contact" component={ContactMe}>
+							<ContactMe handleSubmit={this.handleSubmit} toggleContactForm={this.toggleContactForm} onNameChange={this.onNameChange} onEmailChange={this.onEmailChange} onMessageChange={this.onMessageChange}/>
+						</Route>
+					</Switch>
+				</BrowserRouter>
+			</div>
+		);
+	}
 }
 
+ReactDOM.render(<Router />, document.getElementById('root')); // If you want your app to work offline and load faster, you can change
 
-ReactDOM.render(<Router />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
+
 serviceWorker.unregister();

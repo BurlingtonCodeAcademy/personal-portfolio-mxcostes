@@ -27,13 +27,13 @@ export class Footer extends Component {
 								<i class="fab fa-twitter" /> @maxcostes11
 							</div>
 							<div className="stackItem">
-								<i class="fab fa-facebook" /> Max Costes
+								<i class="fab fa-facebook" /><a href='https://www.facebook.com/max.costes'>Max Costes</a> 
 							</div>
 							<div className="stackItem">
 								<i class="fas fa-envelope-square" /> mxcostes@gmail.com
 							</div>
 							<div className="stackItem">
-                                <i class="fab fa-github"></i>github.com/mxcostes
+                                <i class="fab fa-github"></i><a href='https://www.github.com/mxcostes'>mxcostes</a>
 							</div>
 						</div>
 						<div className="addressStack2">
@@ -44,7 +44,10 @@ export class Footer extends Component {
 								<i class="fas fa-phone" /> 802-782-7922
 							</div>
 							<div className="stackItem">
-								<i class="fab fa-instagram" /> mgcostes
+								<i class="fab fa-instagram" /> <a href='https://www.instagram.com/mgcostes/'>mgcostes</a>
+							</div>
+							<div className="stackItem">
+								<i class="fab fa-linkedin" /> <a href='https://www.linkedin.com/in/max-costes-1988541a3/'>Max Costes</a>
 							</div>
 						</div>
 					</div>
