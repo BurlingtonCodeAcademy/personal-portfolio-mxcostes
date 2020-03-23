@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 function About(props) {
 	return (
 		<div id="aboutMe">
-			<h1>Getting here..</h1>
+			<h1>A little bit about me..</h1>
 			<div className="textBox aboutContent">
 				<img
 					className="aboutImage"
@@ -15,7 +15,7 @@ function About(props) {
 					different countries getting the chance to work with people from around the world. From this experiene I gained perspective on what I was hoping to accomplish and be able to do down the road.
 					With this in mind I decided to search for careers that may allow me to live the life I had imagined. In my search I found software development and with it something I could enjoy doing for many years. After experimenting with online tutorials and exploring documentations I found coding to be challenging in the most satisfying way. The more I learned the more I wanted to continue working to improve.
 					After some time I decided to fully commit to pursing a career in software development. I enrolled in Burlington Code Academy and feel more confident than ever that this is exactly what I want to be doing. 
-					After graduating I will be pursuing opportunites to continue growing in the field in New York City a place that is full of exciting opportunities in the field. Excited for the next chapter.
+					After graduating I will be pursuing opportunites to continue growing in the field in New York City a place that is full of exciting opportunities in the field. I'm very excited for what lies ahead.
 
 				</span>
 			</div>

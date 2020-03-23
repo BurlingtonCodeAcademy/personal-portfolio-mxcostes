@@ -59,6 +59,7 @@ export class ContactMe extends Component {
     render() {
         return (
             <div id='contactForm'>
+                <h1>Contact me using using the form below</h1>
                 <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                 <div className="containerQC">
                   <div className="colunm1">

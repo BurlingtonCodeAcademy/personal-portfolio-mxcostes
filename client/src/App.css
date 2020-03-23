@@ -28,6 +28,7 @@ a {
 	justify-content: center;
 }
 
+
 /* --------------------------Header ------------------------------ */
 #header {
 	display: flex;
@@ -77,6 +78,13 @@ a {
 	flex-direction: column;
 }
 
+.portraitImage {
+	width: 400px;
+	height: auto;
+	padding-top: 1rem;
+	padding-left: 11%;
+}
+
 
 
 
@@ -92,15 +100,14 @@ a {
 
 .aboutContent {
 	color: white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
+	
 }
 
 .aboutImage {
 	width: 400px;
+	padding: 1rem 1rem 1rem 0;
 	height: auto;
+	float: left;
 }
 
 #aboutSpan {
@@ -145,6 +152,7 @@ label {
 	color: white;
 	width: 100%;
 	padding-left: 38%;
+	padding-top: 2rem;
 }
 
 
@@ -175,6 +183,15 @@ background-color: rgba(41, 37, 37, 0.6);
 	justify-content: center;
 	padding: 3rem;
 
+}
+
+img {
+    transition:transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
 }
 
 /* ---------------------------- Portfolio ------------------------------------- */
@@ -398,10 +415,11 @@ i {
 /* ------------------------Contact--------------------------------------*/
 
 #contactForm {
-	padding-top: 10rem;
 	display: flex;
 	flex-direction: column;
 	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 	background-size: cover;
 	height: 100vh;
+	justify-content: center;
+	text-align: center;
 }
