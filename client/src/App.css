@@ -3,10 +3,11 @@
 
 div {
 	font-family: 'Baloo 2', cursive;
+	color: white;
 }
 
 h1 {
-	color:rgba(41, 37, 37, 0.8);
+	color:white;
 }
 
 a {
@@ -14,11 +15,17 @@ a {
 	color: white;
 }
 
+#index {
+	display: flex;
+	flex-direction: column;
+}
+
 .textBox {
 	background-color: rgba(41, 37, 37, 0.3);
 	width: fit-content;
 	padding: 2rem;
 	border-radius: 5px;
+	justify-content: center;
 }
 
 /* --------------------------Header ------------------------------ */
@@ -59,10 +66,10 @@ a {
 /* ----------------------------------Portrait -------------------------------*/
 
 #portrait {
-	padding: 3rem;
-	height: 100vh;
-	background-image: url('https://images.unsplash.com/photo-1491622652925-46646d8a603d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1447&q=80');
+	padding: 5rem;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 	background-size: cover;
+	
 }
 
 .portraitContent {
@@ -76,17 +83,24 @@ a {
 /* ------------------------ About me ---------------------------------------------------- */
 
 #aboutMe {
-	padding: 3rem;
-	height: 100vh;
-	background-image: url('https://images.unsplash.com/photo-1491622652925-46646d8a603d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1447&q=80');
+	padding: 5rem;
+	height: fit-content;
+	justify-content: center;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 	background-size: cover;
 }
 
 .aboutContent {
 	color: white;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
 
+}
+
+.aboutImage {
+	width: 400px;
+	height: auto;
 }
 
 #aboutSpan {
@@ -96,19 +110,18 @@ a {
 /* -------------------------------------Features/ Hobbies/ Photo Galleries ---------------------------------------*/
 #box {
 	height: 60vh;
-	background-image: url('https://images.unsplash.com/photo-1519376849285-7e81643e2c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-	background-size: cover;
-	padding-top: 20%;
-	padding-bottom: 30%;
 }
 
 #hobbiesContainer {
-	height: 60vh;
-	background-image: url('https://images.unsplash.com/photo-1519376849285-7e81643e2c9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 	background-size: cover;
-	padding-top: 10%;
-	padding-bottom: 95%;
-	padding-right: 3rem;
+}
+
+.photoGallery {
+	height: fit-content;
 }
 
 #hobbyBio {
@@ -129,10 +142,11 @@ a {
 }
 
 label {
-	color: black;
+	color: white;
 	width: 100%;
 	padding-left: 38%;
 }
+
 
 .imageSizing {
 	width: 300px;
@@ -156,10 +170,11 @@ background-color: rgba(41, 37, 37, 0.6);
 	grid-column-gap: 30px;
 	grid-row-gap: 30px;
 	grid-template-columns: 1fr 1fr 1fr;
-	height: 300px;
+	height: fit-content;
 	width: 90%;
 	justify-content: center;
 	padding: 3rem;
+
 }
 
 /* ---------------------------- Portfolio ------------------------------------- */
@@ -167,7 +182,7 @@ background-color: rgba(41, 37, 37, 0.6);
 	padding-top: 5rem;
 	display: flex;
 	flex-direction: column;
-	background-image: url('https://images.unsplash.com/photo-1503198515498-d0bd9ed16902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80');
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
 	background-size: cover;
 }
 
@@ -384,4 +399,9 @@ i {
 
 #contactForm {
 	padding-top: 10rem;
+	display: flex;
+	flex-direction: column;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+	background-size: cover;
+	height: 100vh;
 }

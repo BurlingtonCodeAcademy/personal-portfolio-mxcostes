@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import ContactMe from './ContactMe'
 
 class App extends React.Component {
 

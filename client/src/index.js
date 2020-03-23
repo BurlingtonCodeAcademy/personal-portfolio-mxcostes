@@ -30,13 +30,15 @@ class Router extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div id = 'index'>
 				<BrowserRouter>
 					<Header />
 					<Switch>
 						<Route exact path="/" component={App}>
+              <div id='portrait'>
 							<Portrait />
 							<Features />
+              </div>
 							<Footer />
 						</Route>
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Row from 
 
 export class Hobbies extends Component {
 	render() {
@@ -8,14 +7,15 @@ export class Hobbies extends Component {
                 <div id='hobbiesBioContainer'>
                 <h1>Hobbies and Interests</h1>
 				<p className='textBox'>
-					One of the driving forces in my life is my curiosity and a strong desire to grow and learn and understand new things. 
-					This nature of mine has lead to an active life. To get out in nature I'll either
-					Pick up Basketball enthusiast.
+					I have a wide range of hobbies that keep me busy.  I believe in staying busy by doing things that will allow for self imporvement althoug that times I feel that my judgement to dtermine what self imporvementis can be subjective.
+					Activities I enjpy the most are hiking with friends through foreign countries, pick up basketball, and going to YouTube and Wikipedia rabbit holes deep diving through historical events, marvel character backgrounds, or the creation of Middle Earth.
+					I enjoy taking on outdoor physical activities with other and have found myself enoying biking, hiking kayaking and skiing, depending on the location and time of year. The hobby that has dominated vacation time for the past 4 years is traveling with friends and family.
+
 
 				</p>
 				</div>
                 <div className="photoGallery">
-					<div className="featureContainer">
+					
 						<div id="landing-images">
                             {/* --------------------column 1------------------------- */}
 							<div className="column">
@@ -53,7 +53,7 @@ export class Hobbies extends Component {
 									<img class="landing-image" src="https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/28336574_1797827216896286_2624170980770577103_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=_JgAsV3OX3AAX_ZKCWM&_nc_ht=scontent-iad3-1.xx&oh=aca0a37fc6107230bdf77d5f4719342f&oe=5E9A6304" alt="" />
 								</div>
 							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
