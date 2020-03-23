@@ -41,6 +41,7 @@ function Portfolio(props) {
 						<label className="portfolioLabels">Tic-Tac-Toe</label>
 						<span>We began working with graphic interfaces, making a game powered by javascript and presented throug HTML and CSS. 
 							Iterating over arrays and manipulating the DOM were big pieces of the project driving its functionality. 
+							<p>Click <a href='https://enigmatic-citadel-63710.herokuapp.com'>here</a> to try it out!</p>
 						</span>
 					</div>
 				</div>
