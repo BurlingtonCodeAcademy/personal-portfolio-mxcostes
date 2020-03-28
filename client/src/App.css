@@ -1,0 +1,425 @@
+/* -------------------------Across Component Standards -----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+div {
+	font-family: 'Baloo 2', cursive;
+	color: white;
+}
+
+h1 {
+	color:white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#index {
+	display: flex;
+	flex-direction: column;
+}
+
+.textBox {
+	background-color: rgba(41, 37, 37, 0.3);
+	width: fit-content;
+	padding: 2rem;
+	border-radius: 5px;
+	justify-content: center;
+}
+
+
+/* --------------------------Header ------------------------------ */
+#header {
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(41, 37, 37, 0.3);
+	justify-content: space-between;
+	width: 100%;
+	color: white;
+	height: 4rem;
+	align-items: center;
+	position: fixed;
+	top: 0;
+}
+
+#header.scrolled {
+	background: rgba(41, 37, 37, 0.8);
+	transition: background 500ms;
+}
+
+.headerItems {
+	padding: 1rem;
+	color: white;
+}
+
+.headerItems:hover { 
+	background-color: rgba(41, 37, 37, 0.8);
+	transition: 0.5s;
+
+}
+
+#initials {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* ----------------------------------Portrait -------------------------------*/
+
+#portrait {
+	padding: 5rem;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+	background-size: cover;
+	
+}
+
+.portraitContent {
+	display: flex;
+	flex-direction: column;
+}
+
+.portraitImage {
+	width: 400px;
+	height: auto;
+	padding-top: 1rem;
+	padding-left: 11%;
+}
+
+
+
+
+/* ------------------------ About me ---------------------------------------------------- */
+
+#aboutMe {
+	padding: 5rem;
+	height: fit-content;
+	justify-content: center;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+	background-size: cover;
+}
+
+.aboutContent {
+	color: white;
+	
+}
+
+.aboutImage {
+	width: 400px;
+	padding: 1rem 1rem 1rem 0;
+	height: auto;
+	float: left;
+}
+
+#aboutSpan {
+	padding-left: 2rem;
+}
+
+/* -------------------------------------Features/ Hobbies/ Photo Galleries ---------------------------------------*/
+#box {
+	height: 60vh;
+}
+
+#hobbiesContainer {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+	background-size: cover;
+}
+
+.photoGallery {
+	height: fit-content;
+}
+
+#hobbyBio {
+	background-color: rgba(41, 37, 37, 0.1);
+	border-radius: 5px;
+}
+
+#hobbiesBioContainer {
+	width: 90%;
+	justify-content: center;
+	padding: 3rem;
+}
+
+.image-with-caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+label {
+	color: white;
+	width: 100%;
+	padding-left: 38%;
+	padding-top: 2rem;
+}
+
+
+.imageSizing {
+	width: 300px;
+	height: 200px;
+}
+
+.landing-image {
+	box-shadow: black 5px 4px 3px;
+	margin: 40px 0;
+	width: 97%;
+	color: white;
+}
+
+div .image-with-caption:hover{
+	border: 10px black;
+background-color: rgba(41, 37, 37, 0.6);
+}
+
+#landing-images {
+	display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: fit-content;
+	width: 90%;
+	justify-content: center;
+	padding: 3rem;
+
+}
+
+img {
+    transition:transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+/* ---------------------------- Portfolio ------------------------------------- */
+#portfolioContainer {
+	padding-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+	background-size: cover;
+}
+
+.project {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	margin: 1rem;
+	background-color: rgba(41, 37, 37, 0.4);
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.portfolioItem {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	margin: 0;
+	padding-bottom: 3rem;
+	text-decoration: none;
+}
+
+.portfolioImages {
+	width: 30%;
+}
+
+.portfolioLabels {
+	padding: 0;
+	font-size: 2rem;
+	float: left;
+	width: fit-content;
+	color: white;
+}
+
+.projectDescription {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 5rem;
+	color: white;
+}
+/* ----------------------------- Footer --------------------------------------*/
+
+#footer {
+	font-size: 12px;
+	height: 30%;
+	padding-bottom: 3%;
+	padding-top: 30px;
+	width: 100%;
+	background-color: rgba(41, 37, 37, 0.8);
+	color: white;
+	position: relative;
+	bottom: 0;
+}
+
+#footerContentContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.addresses {
+	display: flex;
+	flex-direction: row;
+	padding-left: 10%;
+	color: white;
+}
+
+.addressStack1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.addressStack2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+#comment-area {
+	background-color: rgb(244, 244, 244);
+	border: none;
+	border-radius: 2px;
+	box-shadow: -1px -1px #d8d8d8;
+	font-family: "Montserrat", sans-serif;
+	height: 100px;
+	padding-top: 3%;
+	width: 400px;
+}
+
+#comment-area:focus {
+	background-color: white;
+	outline-color: lightgray;
+	transition: 0.25s;
+}
+
+.QC {
+	font-size: 1.5em;
+	padding: 1rem;
+}
+
+.column1 {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: left;
+	padding-left: 5rem;
+}
+
+.column2 {
+	display: flex;
+	flex-direction: column;
+	margin-left: 25px;
+	width: 30vw;
+}
+
+.commentQC {
+	margin: 0rem;
+	padding: 10px 0px 10px 0rem;
+	resize: none;
+}
+
+.contentQC {
+	width: 20rem;
+	padding-left: 10%;
+}
+
+.containerQC {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.emailQC {
+	display: flex;
+	justify-content: space-between;
+}
+
+i {
+	padding-right: 5%;
+}
+
+#input-email {
+	background-color: rgb(244, 244, 244);
+	border: none;
+	border-radius: 2px;
+	box-shadow: -1px -1px #d8d8d8;
+	font-family: "Montserrat", sans-serif;
+	height: 2rem;
+	outline-color: lightgray;
+	padding-left: 3%;
+	width: 45%;
+}
+
+#input-email:focus {
+	background-color: white;
+	transition: 0.25s;
+}
+
+#input-name {
+	background-color: rgb(244, 244, 244);
+	border: none;
+	border-radius: 2px;
+	box-shadow: -1px -1px #d8d8d8;
+	font-family: "Montserrat", sans-serif;
+	outline-color: lightgray;
+	padding-left: 3%;
+	width: 45%;
+}
+
+#input-name:focus {
+	background-color: white;
+	transition: 0.25s;
+}
+
+.headerQC {
+	text-align: center;
+}
+
+.learn-more-button {
+	align-items: center;
+	background-color: rgb(101, 104, 101);
+	border-radius: 4px;
+	color: white;
+	display: flex;
+	font-size: 10px;
+	font-weight: bold;
+	height: 40px;
+	justify-content: center;
+	margin-bottom: 1rem;
+	text-align: center;
+	text-decoration: none;
+	transition: 0.25s;
+	width: 150px;
+}
+
+.learn-more-button:hover {
+	background-color: black;
+	color: rgb(228, 228, 228);
+	transition: 0.5s;
+}
+
+.stackItem {
+	padding: 0.4rem;
+	text-align: left;
+	color: white;
+}
+
+/* ------------------------Contact--------------------------------------*/
+
+#contactForm {
+	display: flex;
+	flex-direction: column;
+	background-image: url('https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+	background-size: cover;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+}

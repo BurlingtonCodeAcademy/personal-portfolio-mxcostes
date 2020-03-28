@@ -1,12 +1,21 @@
 import React from 'react';
 import './App.css';
 
-function App() {
-  return (
+class App extends React.Component {
+
+  
+
+  render () {
+
+  
+	return (
     <div className="App">
-      <h1>Hello portfolio!</h1>
-    </div>
-  );
+   
+		</div>
+	);
+}
 }
 
 export default App;
+
+
